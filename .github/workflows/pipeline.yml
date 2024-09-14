@@ -27,7 +27,7 @@ jobs:
         
       - name: Executar testes
         run: |
-          coverage run -m app
+          coverage run -m teste
           
       - name: Resultados
         run: coverage report

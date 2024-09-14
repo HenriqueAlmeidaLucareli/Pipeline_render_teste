@@ -22,7 +22,7 @@ jobs:
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          pip install -r requerements.txt
+          pip install -r site.requerements.txt
         
       - name: Executar testes
         run: |

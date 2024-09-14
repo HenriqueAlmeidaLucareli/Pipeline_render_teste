@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Adicionar Novo Anime</h2>
+<form method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="genero">Gênero:</label>
+    <input type="text" id="genero" name="genero" required>
+
+    <label for="episodios">Número de Episódios:</label>
+    <input type="number" id="episodios" name="episodios" required>
+
+    <button type="submit">Adicionar Anime</button>
+</form>
+{% endblock %}

@@ -11,5 +11,6 @@ class BasicTests(unittest.TestCase):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
 
+#verificando
 if __name__ == '__main__':
     unittest.main()

@@ -1,6 +1,7 @@
 import unittest
 from app import app
 
+#testando
 class BasicTests(unittest.TestCase):
     def setUp(self):
         self.client = app.test_client()

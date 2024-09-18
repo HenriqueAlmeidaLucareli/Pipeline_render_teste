@@ -2,16 +2,24 @@
 
 {% block content %}
 <h2>Adicionar Novo Anime</h2>
-<form method="POST">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+<div class="form-container">
+    <form method="POST">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do anime" required>
+        </div>
 
-    <label for="genero">Gênero:</label>
-    <input type="text" id="genero" name="genero" required>
+        <div class="form-group">
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" placeholder="Digite o gênero do anime" required>
+        </div>
 
-    <label for="episodios">Número de Episódios:</label>
-    <input type="number" id="episodios" name="episodios" required>
+        <div class="form-group">
+            <label for="episodios">Número de Episódios:</label>
+            <input type="number" id="episodios" name="episodios" placeholder="Digite o número de episódios" required>
+        </div>
 
-    <button type="submit">Adicionar Anime</button>
-</form>
+        <button type="submit" class="btn-submit">Adicionar Anime</button>
+    </form>
+</div>
 {% endblock %}

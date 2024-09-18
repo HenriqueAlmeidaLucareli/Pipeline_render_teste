@@ -2,13 +2,18 @@
 
 {% block content %}
 <h2>Lista de Animes</h2>
-<ul>
+<div class="anime-list">
     {% for anime in animes %}
-    <li>
-        <strong>{{ anime.nome }}</strong> - Gênero: {{ anime.genero }}, Episódios: {{ anime.episodios }}
-    </li>
+    <div class="anime-card">
+        <img src="{{ url_for('static', filename='images/anime-placeholder.png') }}" alt="Capa de {{ anime.nome }}">
+        <div class="anime-info">
+            <h3>{{ anime.nome }}</h3>
+            <p><strong>Gênero:</strong> {{ anime.genero }}</p>
+            <p><strong>Episódios:</strong> {{ anime.episodios }}</p>
+        </div>
+    </div>
     {% else %}
-    <li>Nenhum anime disponível no momento.</li>
+    <p>Nenhum anime disponível no momento.</p>
     {% endfor %}
-</ul>
+</div>
 {% endblock %}

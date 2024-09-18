@@ -44,3 +44,9 @@ jobs:
 
       - name: Push Docker image
         run: docker push henriquelucareli/projeto_desafio:latest
+
+      - name: Render
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: srv-crlk4mbv2p9s73fourbg # trocar: esta em Deploy hook
+          api-key: rnd_dAytgHrg67qJUXjGjiRTBBJBUEjG #trocar: em criar chave

@@ -5,7 +5,7 @@
 <div class="anime-list">
     {% for anime in animes %}
     <div class="anime-card">
-        <img src="{{ url_for('static', filename='images/anime-placeholder.png') }}" alt="Capa de {{ anime.nome }}">
+        <img src="{{ url_for('static', filename='images/hq720.png') }}" alt="Capa de {{ anime.nome }}">
         <div class="anime-info">
             <h3>{{ anime.nome }}</h3>
             <p><strong>Gênero:</strong> {{ anime.genero }}</p>
